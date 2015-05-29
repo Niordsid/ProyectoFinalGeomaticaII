@@ -29,21 +29,21 @@ SET time_zone = "+00:00";
 CREATE TABLE IF NOT EXISTS `BANCODESANGRE` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(80) NOT NULL,
-  `address` varchar(80) NOT NULL,
-  `Phone` varchar(80) NOT NULL,
+  `address` varchar(80),
+  `Phone` varchar(80),
   `Lat` decimal(10,6) NOT NULL,
   `Lng` decimal(10,6) NOT NULL,
-  `O_positivo` int(4) NOT NULL,
-  `O_negativo` int(4) NOT NULL,
-  `A_positivo` int(4) NOT NULL,
-  `A_negativo` int(4) NOT NULL,
-  `B_positivo` int(4) NOT NULL,
-  `B_negativo` int(4) NOT NULL,
-  `AB_positivo` int(4) NOT NULL,
-  `AB_negativo` int(4) NOT NULL,
+  `O_positivo` int(4),
+  `O_negativo` int(4),
+  `A_positivo` int(4),
+  `A_negativo` int(4),
+  `B_positivo` int(4),
+  `B_negativo` int(4),
+  `AB_positivo` int(4),
+  `AB_negativo` int(4),
   `active` int(1) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=17 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=26 ;
 
 --
 -- Volcado de datos para la tabla `BANCODESANGRE`
@@ -65,8 +65,16 @@ INSERT INTO `BANCODESANGRE` (`id`, `nombre`, `address`, `Phone`, `Lat`, `Lng`, `
 (13, 'HOSPITAL UNIVERSITARIO DE LA SAMARITANA', 'KR 8 # 0 55 SUR', '4077075 Ext. 10118 - 2333270', 4.587157, -74.083556, 0, 0, 0, 0, 0, 0, 0, 0, 1),
 (14, 'INSTITUTO NACIONAL DE CANCEROLOGIA - E.S.E.', 'AV 1 # 9 85', '3341111 Ext. 5553-5503-5504', 4.588128, -74.084200, 5, 0, 10, 0, 5, 2, 20, 12, 1),
 (15, 'SOCIEDAD DE CIRUGIA DE BOGOTÁ - HOSPITAL DE SAN JOSÉ', 'CL 10 # 18 75', '3538000 Ext. 180-458', 4.603586, -74.086085, 10, 0, 5, 0, 3, 0, 0, 0, 1),
-(16, 'SOCIEDAD NACIONAL DE LA CRUZ ROJA COLOMBIANA', 'AV 68 # 66B 31', '4376309 - 4376360 - 4000000 Ext. 6716-6718', 4.673579, -74.089025, 60, 1, 30, 1, 60, 0, 50, 1, 1);
-
+(16, 'SOCIEDAD NACIONAL DE LA CRUZ ROJA COLOMBIANA', 'AV 68 # 66B 31', '4376309 - 4376360 - 4000000 Ext. 6716-6718', 4.673579, -74.089025, 60, 1, 30, 1, 60, 0, 50, 1, 1),
+(17,'PORTAL AMERICAS- TRANSMILENIO', null, null, 4.629251, -74.171993, null, null, null, null, null, null, null, null, 1),
+(18,'PORTAL DEL SUR- TRANSMILENIO', null, null, 4.597506, -74.169046, null, null, null, null, null, null, null, null, 1),
+(19,'PORTAL TUNAL TRANSMILENIO', null, null, 4.571249, -74.140137, null, null, null, null, null, null, null, null, 1),
+(20,'PORTAL USME- TRANSMILENIO', null, null, 4.530926, -74.119982, null, null, null, null, null, null, null, null, 1),
+(21,'PORTAL 20 DE JULIO- TRANSMILENIO', null, null, 4.564974, -74.096862, null, null, null, null, null, null, null, null, 1),
+(22,'PORTAL EL DORADO- TRANSMILENIO', null, null, 4.680751, -74.120704, null, null, null, null, null, null, null, null, 1),
+(23,'PORTAL 80- TRANSMILENIO', null, null, 4.709680, -74.111574, null, null, null, null, null, null, null, null, 1),
+(24,'PORTAL SUBA- TRANSMILENIO', null, null, 4.746371, -74.094491, null, null, null, null, null, null, null, null, 1),
+(25,'PORTAL NORTE- TRANSMILENIO', null, null, 4.754018, -74.046325, null, null, null, null, null, null, null, null, 1);
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

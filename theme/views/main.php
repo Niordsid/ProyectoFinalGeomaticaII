@@ -77,7 +77,7 @@
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
                             <h1 class="brand-heading">Bancos de Sangre</h1>
-                            <h3><p class="intro-text">Encuentra tu banco mas cercano</p></h3>
+                            <h3><p class="intro-text">Explora, Encuentra la mejor Ruta para llegar al banco que tu Desees</p></h3>
                             <a href="#about" class="btn btn-circle page-scroll">
                                 <i class="fa fa-angle-double-down animated"></i>
                             </a>
@@ -92,8 +92,8 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h3>¿Qué hacemos?</h3>
-                    <p>Coordinamos la Red Nacional de Bancos de Sangre desde el año 1993, nuestra misión es integrar las Coordinaciones Departamentales, Bancos de Sangre y Servicios de Transfusión del territorio nacional, con el fin de asegurar acceso oportuno, uso racional, calidad y seguridad, mediante actividades de supervisión, asesoría, asistencia técnica y capacitación a través de las siguientes líneas estratégicas:</p>
-                    <li>Gestión y supervisión de la Red Nacional de Bancos de Sangre</li>
+                    <p>Coordinar la Red Distrital de Bancos de Sangre, para llevar el control de los niveles de plaquetas a través de las siguientes líneas estratégicas:</p>
+                    <li>Gestión y supervisión de la Red Distrital de Bancos de Sangre</li>
                     <li>Promoción de la donación voluntaria y habitual de sangre.</li>
                     <li>Hemovigilancia y Sistemas de información</li>
 
@@ -103,37 +103,64 @@
 
         <!-- Download Section -->
         <section id="Buscar" class="content-section text-center">
-            <div class="download-section">
-                <div class="container">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <h2>Busqueda</h2>
-                        <p>Ingresa el nombre del Banco de Sangre que deseas localizar en el mapa:</p>
-                        <form action="script.php" method="post">
-                            <h4>
-                                <select id="banco">
-                                    <option value="1">CLÍNICA COLSANITAS S.A. - CLÍNICA REINA SOFÍA</option>
-                                    <option value="2">CLINICA DE MARLY S.A</option>
-                                    <option value="3">FUNDACIÓN CARDIO INFANTIL INSTITUTO DE CARDIOLOGÍA</option>
-                                    <option value="4">FUNDACIÓN HEMATOLÓGICA COLOMBIA</option>
-                                    <option value="5">FUNDACION HOSPITAL DE LA MISERICORDIA</option>
-                                    <option value="6">FUNDACIÓN KARL LANDSTEINER IN MEMORIAM</option>
-                                    <option value="7">HEMOCENTRO DISTRITAL</option>
-                                    <option value="8">HEMOLIFE</option>
-                                    <option value="9">HOSPITAL CENTRAL POLICÍA NACIONAL</option>
-                                    <option value="10">HOSPITAL INFANTIL UNIVERSITARIO DE SAN JOSE</option>
-                                    <option value="11">HOSPITAL MILITAR CENTRAL</option>
-                                    <option value="12">HOSPITAL UNIVERSITARIO CLÍNICA SAN RAFAEL</option>
-                                    <option value="13">HOSPITAL UNIVERSITARIO DE LA SAMARITANA</option>
-                                    <option value="14">INSTITUTO NACIONAL DE CANCEROLOGÍA - E.S.E</option>
-                                    <option value="15">SOCIEDAD DE CIRUGÍA DE BOGOTÁ - HOSPITAL DE SAN JOSÉ</option>
-                                    <option value="16">SOCIEDAD NACIONAL DE LA CRUZ ROJA COLOMBIANA</option>
-                                </select>
-                            </h4>
-                        </form>
-                    </div>
-                </div>
+    <form class="pure-form pure-form-stacked">
+    <fieldset>
+        <h2>Busqueda</h2>
+
+        <div class="pure-g">
+           
+            <div class="col-lg-8 col-lg-offset-2">
+                <label for="state"><p>Banco de Sangre</p></label>
+                 <h4>
+                <select id="banco" class="pure-input-1-2">
+                
+                        <option value="1">CLÍNICA COLSANITAS S.A. - CLÍNICA REINA SOFÍA</option>
+                        <option value="2">CLINICA DE MARLY S.A</option>
+                        <option value="3">FUNDACIÓN CARDIO INFANTIL INSTITUTO DE CARDIOLOGÍA</option>
+                        <option value="4">FUNDACIÓN HEMATOLÓGICA COLOMBIA</option>
+                        <option value="5">FUNDACION HOSPITAL DE LA MISERICORDIA</option>
+                        <option value="6">FUNDACIÓN KARL LANDSTEINER IN MEMORIAM</option>
+                        <option value="7">HEMOCENTRO DISTRITAL</option>
+                        <option value="8">HEMOLIFE</option>
+                        <option value="9">HOSPITAL CENTRAL POLICÍA NACIONAL</option>
+                        <option value="10">HOSPITAL INFANTIL UNIVERSITARIO DE SAN JOSE</option>
+                        <option value="11">HOSPITAL MILITAR CENTRAL</option>
+                        <option value="12">HOSPITAL UNIVERSITARIO CLÍNICA SAN RAFAEL</option>
+                        <option value="13">HOSPITAL UNIVERSITARIO DE LA SAMARITANA</option>
+                        <option value="14">INSTITUTO NACIONAL DE CANCEROLOGÍA - E.S.E</option>
+                        <option value="15">SOCIEDAD DE CIRUGÍA DE BOGOTÁ - HOSPITAL DE SAN JOSÉ</option>
+                        <option value="16">SOCIEDAD NACIONAL DE LA CRUZ ROJA COLOMBIANA</option>
+                       
+                </select>
+                 </h4>
             </div>
-        </section>
+<br>
+            <div class="col-lg-8 col-lg-offset-2">
+                <label for="state"><p>Ubicacion Cercana</p></label>
+                <h4>
+                <select id="ruta" class="pure-input-1-2">
+                
+                        <option value="17">PORTAL AMERICAS- TRANSMILENIO</option>
+                        <option value="18">PORTAL DEL SUR- TRANSMILENIO</option>
+                        <option value="19">PORTAL TUNAL TRANSMILENIO</option>
+                        <option value="20">PORTAL USME- TRANSMILENIO</option>
+                        <option value="21">PORTAL 20 DE JULIO- TRANSMILENIO</option>
+                        <option value="22">PORTAL EL DORADO- TRANSMILENIO</option>
+                        <option value="23">PORTAL 80- TRANSMILENIO</option>
+                        <option value="24">PORTAL SUBA- TRANSMILENIO</option>
+                        <option value="25">PORTAL NORTE- TRANSMILENIO</option>
+                        
+                </select>
+                </h4>
+            </div>
+            
+        </div>
+            <div class="col-lg-8 col-lg-offset-2">    
+        <button type="submit" class="pure-input-1-2"><h4>Calcular Ruta</h4></button>
+        </div>
+    </fieldset>
+</form>
+</section>
 
         <!-- Map Section -->
         <section id="Mapa" class="container content-section text-center">
@@ -142,13 +169,17 @@
 
                 </div>
             </div>
+            <center>
+            <iframe src="https://www.google.com/maps/d/embed?mid=zZBim7qm0478.kGaDllgjbDB0" width="640" height="480"></iframe>
+            </center>
         </section>
+
 
 
         <!-- Footer -->
         <footer>
             <div class="container text-center">
-                <p>Copyright &copy; Geomatica II 2014</p>
+                <p>Geomatica II 2015 - UNIVERSIDAD DISTRITAL FRANCISCO JOSÉ DE CALDAS</p>
             </div>
         </footer>
 
