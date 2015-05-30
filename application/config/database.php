@@ -53,7 +53,7 @@ if($_SERVER['HTTP_HOST'] == 'geo2.local') {
     $db['default']['hostname'] = 'localhost';
     $db['default']['database'] = 'geo2';
     $db['default']['username'] = 'root';
-    $db['default']['password'] = 'admin';
+    $db['default']['password'] = '';
 }
 
 if($_SERVER['HTTP_HOST'] == 'proyectogeomaticaii.herobo.com') {

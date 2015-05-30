@@ -106,7 +106,9 @@
     <form class="pure-form pure-form-stacked">
     <fieldset>
         <h2>Busqueda</h2>
-
+        <div class="col-lg-8 col-lg-offset-2">
+        <h3>Escoja En la primera lista el origen de su ruta, y en la segunda lista escoja el destino de su ruta para crear el mapa</h3>
+</div>
         <div class="pure-g">
            
             <div class="col-lg-8 col-lg-offset-2">
@@ -140,24 +142,22 @@
                 <h4>
                 <select id="ruta" class="pure-input-1-2">
                 
-                        <option value="17">PORTAL AMERICAS- TRANSMILENIO</option>
-                        <option value="18">PORTAL DEL SUR- TRANSMILENIO</option>
-                        <option value="19">PORTAL TUNAL TRANSMILENIO</option>
-                        <option value="20">PORTAL USME- TRANSMILENIO</option>
-                        <option value="21">PORTAL 20 DE JULIO- TRANSMILENIO</option>
-                        <option value="22">PORTAL EL DORADO- TRANSMILENIO</option>
-                        <option value="23">PORTAL 80- TRANSMILENIO</option>
-                        <option value="24">PORTAL SUBA- TRANSMILENIO</option>
-                        <option value="25">PORTAL NORTE- TRANSMILENIO</option>
+                        <option value="1">PORTAL AMERICAS- TRANSMILENIO</option>
+                        <option value="2">PORTAL DEL SUR- TRANSMILENIO</option>
+                        <option value="3">PORTAL TUNAL TRANSMILENIO</option>
+                        <option value="4">PORTAL USME- TRANSMILENIO</option>
+                        <option value="5">PORTAL 20 DE JULIO- TRANSMILENIO</option>
+                        <option value="6">PORTAL EL DORADO- TRANSMILENIO</option>
+                        <option value="7">PORTAL 80- TRANSMILENIO</option>
+                        <option value="8">PORTAL SUBA- TRANSMILENIO</option>
+                        <option value="9">PORTAL NORTE- TRANSMILENIO</option>
                         
                 </select>
                 </h4>
             </div>
             
         </div>
-            <div class="col-lg-8 col-lg-offset-2">    
-        <button type="submit" class="pure-input-1-2"><h4>Calcular Ruta</h4></button>
-        </div>
+            
     </fieldset>
 </form>
 </section>
@@ -168,6 +168,11 @@
                 <div id="map">
 
                 </div>
+            </div>
+            <div class="col-lg-8 col-lg-offset-2">
+            <br>
+            <br>
+            <h3>Ubiciones geográficas de los Bancos de Sangre de la ciudad de Bogotá</h3>
             </div>
             <center>
             <iframe src="https://www.google.com/maps/d/embed?mid=zZBim7qm0478.kGaDllgjbDB0" width="640" height="480"></iframe>
@@ -183,6 +188,8 @@
             </div>
         </footer>
 
+        <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+
         <!-- jQuery -->
         <script src="/theme/js/jquery.js"></script>
 
@@ -193,8 +200,8 @@
         <script src="/theme/js/jquery.easing.min.js"></script>
 
  
-        <script src="/theme/js/excanvas.js"></script>
-        <script src="/theme/js/maps.js"></script>
+        <!--<script src="/theme/js/excanvas.js"></script>-->
+        <!--<script src="/theme/js/maps.js"></script>-->
         <script src="/theme/js/gmaps.js"></script>
         <script src="/theme/js/app.js"></script>
 

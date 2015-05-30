@@ -13,7 +13,8 @@ class Main extends CI_Controller {
         }
     }
 
-    public function index() {;
+   
+ public function index() {;
         $this->load->view(THEME_VIEWS . '/main');
     }
 
@@ -22,15 +23,19 @@ class Main extends CI_Controller {
         $this->load->view(THEME_VIEWS . '/json', array("data"=>$data));
     }
 
+     public function listar_ruta() {
+        $data = $this->Api->get('RUTAS');
+        $this->load->view(THEME_VIEWS . '/json', array("data"=>$data));
+    }
+
     public function obtener($id){
         $data = $this->Api->get_where('BANCODESANGRE', array("id"=>$id));
         $this->load->view(THEME_VIEWS . '/json', array("data"=>$data));
     }
 
-    public function obtenerruta($idruta){
-        $data = $this->Api->get_where('RUTAS', array('idruta'=>$idruta));
-        $this->load->view(THEME_VIEWS . '/json', array('data'=>$data);
-
+    public function obtenerruta($id){
+        $data = $this->Api->get_where('RUTAS', array("id"=>$id));
+        $this->load->view(THEME_VIEWS . '/json', array("data"=>$data));
     }
-
+   
 }
