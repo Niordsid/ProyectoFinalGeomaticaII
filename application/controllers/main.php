@@ -23,8 +23,14 @@ class Main extends CI_Controller {
     }
 
     public function obtener($id){
-         $data = $this->Api->get_where('BANCODESANGRE', array("id"=>$id));
+        $data = $this->Api->get_where('BANCODESANGRE', array("id"=>$id));
         $this->load->view(THEME_VIEWS . '/json', array("data"=>$data));
+    }
+
+    public function obtenerruta($idruta){
+        $data = $this->Api->get_where('RUTAS', array('idruta'=>$idruta));
+        $this->load->view(THEME_VIEWS . '/json', array('data'=>$data);
+
     }
 
 }
